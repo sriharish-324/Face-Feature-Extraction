@@ -4,7 +4,8 @@
 -opencv-python,
 -firebase_admin,
 -numpy.
-
+<img src="
+https://github.com/sriharish-324/Face-Feature-Extraction/blob/main/Resources/Screenshot%202023-11-24%20093132.png" alt="Alt Text" width="400"/>
 ## Abstract 
 The proposed attendance system leverages advanced facial recognition technology to
 streamline the attendance tracking process in educational institutions. This system integrates
