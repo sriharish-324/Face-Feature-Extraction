@@ -1,14 +1,4 @@
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import db
-
-cred = credentials.Certificate("faceattendancerealtime-8dce7-firebase-adminsdk-y90l2-08a1fb47f5.json")
-firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://faceattendancerealtime-8dce7-default-rtdb.firebaseio.com/"
-})
-
-ref = db.reference('Students')
-
+import json
 data = {
     "7376221CS314":
         {
@@ -43,6 +33,39 @@ data = {
             "last_attendance_time": "2022-12-11 00:54:34",
             "Status": "Marked"
         },
+"7376211CS320":
+        {
+            "name": "Thiru",
+            "major": "CSE",
+            "starting_year": 2021,
+            "total_attendance": 0,
+            "standing": "G",
+            "year": 3,
+            "last_attendance_time": "2022-12-11 00:54:34",
+            "Status": "Marked"
+        },
+"7376212CT119":
+        {
+            "name": "Jashwanth R",
+            "major": "CT",
+            "starting_year": 2021,
+            "total_attendance": 0,
+            "standing": "G",
+            "year": 3,
+            "last_attendance_time": "2022-12-11 00:54:34",
+            "Status": "Marked"
+        },
+"7376212CT108":
+        {
+            "name": "Chandru M",
+            "major": "CT",
+            "starting_year": 2021,
+            "total_attendance": 0,
+            "standing": "G",
+            "year": 3,
+            "last_attendance_time": "2022-12-11 00:54:34",
+            "Status": "Marked"
+        },
     "7376211EC328":
         {
                 "name": "Yuvaraj N ",
@@ -66,6 +89,5 @@ data = {
             "Status": "Marked"
         }
 }
-
-for key, value in data.items():
-    ref.child(key).set(value)
+with open('student_data.json', 'w') as json_file:
+    json.dump(data, json_file)
