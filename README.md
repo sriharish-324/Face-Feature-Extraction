@@ -1,4 +1,4 @@
-# Face-Feature-Extraction
+# Face-Feature-Extraction(Offline)
 
 ![Screenshot](https://github.com/sriharish-324/Face-Feature-Extraction/blob/main/Resources/Screenshot%202023-11-24%20093132.png)
 
@@ -10,5 +10,5 @@ The proposed attendance system leverages advanced facial recognition technology 
 
 - Python 3.10.9
 - opencv-python
-- firebase_admin
+- json
 - numpy
